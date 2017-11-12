@@ -8,7 +8,32 @@
 	<meta name="author" content="Frederik Ebert">
 	<link rel="stylesheet" type="text/css" href="./frederikebert_files/basic-profile.css" title="Basic Profile" media="all">
 	<title>Frederik Ebert</title>
+
+
+    <style>
+        /*th, td {*/
+            /*padding: 6px;*/
+        /*}*/
+        .one
+        {
+            width: 160px;
+            height: 160px;
+            position: relative;
+        }
+        .two {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+    </style>
+
 </head>
+
+
+
 
 <body>
 <div id="wrap">
@@ -26,11 +51,15 @@
 		<h2>Frederik Ebert</h2>
 		
         <p>
-            I'm a visiting researcher from  <a href="https://www.tum.de/"> TU Munich (TUM)</a> working at <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>'s lab at the  <a href="http://bair.berkeley.edu/"> Berkeley Artificial Intelligence Laboratory (BAIR) </a>. Here I am writing my master thesis in the field of deep reinforcement learning. 
+            I'm a PhD student in Computer Science at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~svlevine/">Prof. Sergey Levine</a>
+            and part of the  <a href="http://bair.berkeley.edu/"> Berkeley Artificial Intelligence Laboratory (BAIR) </a>.
+
+            My research interests are in development of algoritms for robotic manipulation using techniques from deep learning, deep reinforcment learning and classical robotics.
+            I'm also interested in tactile sensing for robotic manipulation.
         </p>
-    
+            I completed a Bachelor's degree in mechatronics and information technology and a master's degree in "Robotics Cognition Intelligence" at <a href="https://www.tum.de/"> TU Munich (TUM)</a>.
         <p>
-            My research interests are the development of novel approaches to apply reinforcement learning and deep learning to robotic manipulation and locomotion.
+
         </p>
         
         <p>
@@ -40,10 +69,57 @@
         <p>
             For Information about my robotic projects I did at TU Munich please click <a href="http://www.frederikebert.de/abgeschlossene-projekte/"> here</a>.
         </p>
+
+        <h2>Publications</h2>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+            <tr onmouseout="sna_stop()" onmouseover="sna_start()">
+                <td width="25%">
+                    <div class="one">
+                        <div class="two" id="sna_gif" style="opacity: 0;"><img src="./frederikebert_files/oadna_apart_square.gif" width="150" height="150"></div>
+                        <img src="./frederikebert_files/oadna_frame.gif" width="150" height="150">
+                    </div>
+                    <script type="text/javascript">
+                        function sna_start() {
+                            document.getElementById('sna_gif').style.opacity = "1";
+                        }
+                        function sna_stop() {
+                            document.getElementById('sna_gif').style.opacity = "0";
+                        }
+                        sna_stop()
+                    </script>
+
+                </td>
+                <td valign="top" width="75%">
+                    <p><a href="https://arxiv.org/pdf/1710.05268.pdf">
+                        <strong>Self-Supervised Visual Planning with Temporal Skip Connections</strong></a><br>
+                        <strong >Frederik Ebert</strong>, <a href="http://people.eecs.berkeley.edu/~cbfinn/" >Chelsea Finn</a>, <a href="http://people.eecs.berkeley.edu/~alexlee_gk/">Alex Lee</a>,
+                        <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+                        <em>Conference on Robot Learning (CoRL)</em>, 2017 <font color="green"><strong>(Long Talk)</strong></font> <br>
+                        <a href="https://arxiv.org/abs/1710.05268">arXiv</a>
+                        /
+                        <a href="https://github.com/febert/visual_mpc">code</a>
+                        /
+                        <a href="https://sites.google.com/view/sna-visual-mpc">video results and data</a>
+                    </p><p></p>
+                    <p>
+                        We present three simple improvements to our prior work on self-supervised visual foresight that lead to substantially better visual planning capabilities. Our
+                        method can perform tasks that require longer-term planning and involve multiple objects.
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+
         
 		<p class="credits">© 2016 Frederik Ebert<br>
 	</div>
+
 </div>
+
+
 
 
 </body></html>
