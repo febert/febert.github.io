@@ -54,7 +54,7 @@
             I'm a PhD student in Computer Science at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~svlevine/">Prof. Sergey Levine</a>
             and part of the  <a href="http://bair.berkeley.edu/"> Berkeley Artificial Intelligence Laboratory (BAIR) </a>.
 
-            In my research I focus on the development of algoritms for robotic manipulation using techniques from deep learning, deep reinforcment learning and classical robotics.
+            In my research I focus on the development of algorithms for robotic manipulation using techniques from deep learning, deep reinforcement learning and classical robotics.
         </p>
             I completed a Bachelor's degree in mechatronics and information technology and a master's degree in "Robotics Cognition Intelligence" at <a href="https://www.tum.de/"> TU Munich (TUM)</a>.
         <p>
@@ -64,14 +64,46 @@
         <p>
             Previously I have worked at the mechatronics institute of the <a href="http://www.dlr.de/rm-neu/"> German Aerospace Center (DLR)</a> on the mechanical design and control system of a quadruped robot.
         </p>
-        
-        <p>
-            For Information about my robotic projects I did at TU Munich please click <a href="http://www.frederikebert.de/abgeschlossene-projekte/"> here</a>.
-        </p>
 
         <h2>Publications</h2>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+            <tr onmouseout="retrying_stop()" onmouseover="retrying_start()">
+                <td width="25%">
+                    <div class="one">
+                        <div class="two" id="retrying_gif" style="opacity: 0;"><img src="./frederikebert_files/retrying.png" width="150" height="150"></div>
+                        <img src="./frederikebert_files/retrying.gif" width="150" height="150">
+                    </div>
+                    <script type="text/javascript">
+                        function retrying_start() {
+                            document.getElementById('retrying_gif').style.opacity = "1";
+                        }
+                        function retrying_stop() {
+                            document.getElementById('retrying_gif').style.opacity = "0";
+                        }
+                        retrying_stop()
+                    </script>
+
+                </td>
+                <td valign="top" width="75%">
+                    <p><a href="https://arxiv.org/abs/1810.03043.pdf">
+                        <strong>Robustness via Retrying: Closed-Loop Robotic Manipulation with Self-Supervised Learning</strong></a><br>
+                        <strong >Frederik Ebert</strong>,  <a>Sudeep Dasari</a>, <a href="http://people.eecs.berkeley.edu/~alexlee_gk/">Alex Lee</a>, <a href="http://people.eecs.berkeley.edu/~cbfinn/" >Chelsea Finn</a>
+                        <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+                        <em>Conference on Robot Learning (CoRL)</em>, 2018 <br>
+                        <a href="https://arxiv.org/abs/1810.03043">arXiv</a>
+                        /
+                        <a href="https://github.com/febert/robustness_via_retrying">code</a>
+                        /
+                        <a href="https://sites.google.com/view/robustness-via-retrying/home">video results and data</a>
+                    </p><p></p>
+                    <p>
+                        To enable a robot to continuously retry a task, we devise a self-supervised algorithm for learning image registration, which can keep track of objects of interest for the duration of the trial. We demonstrate that this idea can be combined with a video-prediction based controller to enable complex behaviors to be learned from scratch using only raw visual inputs, including grasping, repositioning objects, and non-prehensile manipulation.
+                    </p>
+                </td>
+            </tr>
+
 
             <tr onmouseout="sna_stop()" onmouseover="sna_start()">
                 <td width="25%">
@@ -108,6 +140,7 @@
                     </p>
                 </td>
             </tr>
+
 
         </table>
 
