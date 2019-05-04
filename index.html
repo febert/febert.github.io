@@ -65,9 +65,73 @@
             Previously I have worked at the mechatronics institute of the <a href="http://www.dlr.de/rm-neu/"> German Aerospace Center (DLR)</a> on the mechanical design and control system of a quadruped robot.
         </p>
 
+        <h3>Robotic Interaction Datasets</h3>
+
+        We are maintaining a growing database of open robotic interaction datasets, which you can find <a href="https://sites.google.com/berkeley.edu/robotic-interaction-datasets" >here</a>.
+        <br/>
+        <br/>
+
+        <h3>Blog Posts</h3>
+
+        <ul>
+            <li> <a href="https://bair.berkeley.edu/blog/2019/04/11/tools/">Robots that Learn to Use Improvised Tools</a>: how robots can figure out how to solve tasks using tools, including unconventional tools, by learning from a combination of unsupervised interaction and example demonstrations.</li>
+            <li> <a href="https://bair.berkeley.edu/blog/2019/03/21/tactile/">Manipulation By Feel</a>: how we can use visual foresight to enable robots to manipulate objects entirely by feel without vision.</li>
+            <li> <a href="http://bair.berkeley.edu/blog/2018/11/30/visual-rl/">Visual Model-Based Reinforcement Learning as a Path towards Generalist Robots</a>: overviews our work on learning a single model that can be used to accomplish many different tasks, without requiring human supervision. </li>
+        </ul>
+        <br/>
+
         <h2>Publications</h2>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+            <tr onmouseout="retrying_stop()" onmouseover="retrying_start()">
+                <td width="25%">
+                    <div class="one">
+                        <div class="two" id="tooluse" style="opacity: 0;"><img src="./frederikebert_files/tooluse.png" width="150"></div>
+                        <img src="./frederikebert_files/tooluse.png" width="150">
+                    </div>
+
+                </td>
+                <td valign="top" width="75%">
+                    <p><a href="https://arxiv.org/abs/1904.05538">
+                        <strong>Improvisation through Physical Understanding: Using Novel Objects as Tools with Visual Foresight</strong></a><br>
+                        <a>Annie Xie</a>, <strong >Frederik Ebert</strong>, <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>, <a href="http://people.eecs.berkeley.edu/~cbfinn/" >Chelsea Finn</a> <br />
+                        <em>Robotics: Science and Systems (RSS) </em>, 2019 <br>
+                        <a href="https://arxiv.org/abs/1904.05538">arXiv</a>
+                        /
+                        <a href="https://sites.google.com/view/anonymous-dgvf/home">video results and data</a>
+                    </p><p></p>
+                    <p>
+                        We combine diverse demonstration data with self-supervised interaction data, aiming to leverage the interaction data to build generalizable models and the demonstration data to guide the model-based RL planner to solve complex tasks.
+                    </p>
+                </td>
+            </tr>
+
+
+            <td width="25%">
+                <div class="one">
+                    <div class="two" id="tactile_mpc" style="opacity: 0;"><img src="./frederikebert_files/tactile_mpc.png" width="150" ></div>
+                    <img src="./frederikebert_files/tactile_mpc.png" width="150">
+                </div>
+
+            </td>
+            <td valign="top" width="75%">
+                <p><a href="https://arxiv.org/abs/1903.04128">
+                    <strong>Manipulation by Feel: Touch-Based Control with Deep Predictive Models</strong></a><br>
+                    <a>Stephen Tian*</a>, <strong >Frederik Ebert*</strong>,  <a>Dinesh Jayaraman</a>, <a>Dinesh Jayaraman</a>,<a>Mayur Mudigonda</a>, <a href="http://people.eecs.berkeley.edu/~cbfinn/" >Chelsea Finn</a>,<a>Roberto Calandra</a> ,<a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> (* equal contribution) <br/>
+                    <em>IEEE International Conference on Robotics and Automation</em>, 2019 <br>
+                    <a href="https://arxiv.org/abs/1903.04128">arXiv</a>
+                    <!--/-->
+                    <!--<a href="https://github.com/febert/robustness_via_retrying">code</a>-->
+                    /
+                    <a href="https://sites.google.com/view/manipbyfeel/">video results and data</a>
+                </p><p></p>
+                <p>
+                    We propose deep tactile MPC, a framework for learning to perform tactile servoing from raw tactile sensor inputs, without manual supervision.
+                    We show that this method enables a robot equipped with a GelSight-style tactile sensor to manipulate a ball and 20-sided die
+                </p>
+            </td>
+
 
             <tr onmouseout="retrying_stop()" onmouseover="retrying_start()">
                 <td width="25%">
@@ -89,8 +153,7 @@
                 <td valign="top" width="75%">
                     <p><a href="https://arxiv.org/abs/1810.03043.pdf">
                         <strong>Robustness via Retrying: Closed-Loop Robotic Manipulation with Self-Supervised Learning</strong></a><br>
-                        <strong >Frederik Ebert</strong>,  <a>Sudeep Dasari</a>, <a href="http://people.eecs.berkeley.edu/~alexlee_gk/">Alex Lee</a>, <a href="http://people.eecs.berkeley.edu/~cbfinn/" >Chelsea Finn</a>
-                        <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+                        <strong >Frederik Ebert</strong>,  <a>Sudeep Dasari</a>, <a href="http://people.eecs.berkeley.edu/~alexlee_gk/">Alex Lee</a>, <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>, <a href="http://people.eecs.berkeley.edu/~cbfinn/" >Chelsea Finn</a>
                         <em>Conference on Robot Learning (CoRL)</em>, 2018 <br>
                         <a href="https://arxiv.org/abs/1810.03043">arXiv</a>
                         /
@@ -146,7 +209,7 @@
 
 
         
-		<p class="credits">© 2016 Frederik Ebert<br>
+		<p class="credits">© 2018 Frederik Ebert<br>
 	</div>
 
 </div>
